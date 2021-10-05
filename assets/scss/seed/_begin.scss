@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: var(--s-body);
+  line-height: var(--s-body-line-height);
+  color: var(--s-text);
+  word-wrap: break-word;
+  min-height: 100vh;
+  height: auto;
+  text-rendering: optimizeLegibility;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+svg {
+  overflow: hidden;
+  vertical-align: -0.15em;
+}
+hr {
+  margin: var(--s-space) 0;
+  border: none;
+  border-top: 1px solid var(--s-border);
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--s-heading);
+  font-weight: var(--s-heading-weight);
+  line-height: var(--s-heading-line-height);
+}
+nav,
+button,
+.button,
+.btn,
+.price,
+._heading,
+.wp-block-pullquote blockquote,
+blockquote,
+label,
+legend {
+  font-family: var(--s-heading);
+  font-weight: var(--s-heading-weight);
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  &:active {
+    opacity: 0.6;
+  }
+}
+*:focus {
+  outline: 0 !important;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  &:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}

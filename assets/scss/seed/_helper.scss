@@ -1,0 +1,30 @@
+._space {
+  margin-bottom: var(--s-space) !important;
+}
+._space_0 {
+  margin-bottom: 0 !important;
+}
+._scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}
+@media (max-width: 991px) {
+  ._desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  ._mobile {
+    display: none !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  ._dark {
+    display: none !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ._light {
+    display: none !important;
+  }
+}

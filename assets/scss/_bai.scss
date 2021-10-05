@@ -1,0 +1,52 @@
+/*
+ * COLORS
+ *
+ --wp--preset--color--bg
+ --wp--preset--color--header
+ --wp--preset--color--card
+ --wp--preset--color--text
+ --wp--preset--color--accent
+ --wp--preset--color--dark-bg
+ --wp--preset--color--dark-header
+ --wp--preset--color--dark-card
+ --wp--preset--color--dark-text
+ */
+:root {
+  --b-title: #000;
+}
+
+@mixin dark-colors {
+  --wp--preset--color--bg: var(--wp--preset--color--dark-bg);
+  --wp--preset--color--header: var(--wp--preset--color--dark-header);
+  --wp--preset--color--card: var(--wp--preset--color--dark-card);
+  --wp--preset--color--text: var(--wp--preset--color--dark-text);
+  --b-title: #fff;
+  --b-text: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(._light) {
+    @include dark-colors;
+  }
+}
+
+body._dark {
+  @include dark-colors;
+}
+
+body {
+  background-color: var(--wp--preset--color--bg);
+  color: var(--wp--preset--color--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3 {
+  a {
+    color: var(--b-title);
+    &:hover {
+      color: var(--wp--preset--color--accent);
+    }
+  }
+}
