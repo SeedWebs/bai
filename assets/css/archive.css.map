@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,AAAA,qBAAqB,AAAC,CACtB,gBAAgB,CAAE,gCAAgC,CAClD,UAAU,CAAE,CAAC,CACb,OAAO,CAAE,WAAW,CACpB,aAAa,CAAE,cAAc,CAC9B",
+    "sources": [
+        "../scss/archive.scss"
+    ],
+    "names": [],
+    "file": "archive.css"
+}

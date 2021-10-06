@@ -1,69 +1,68 @@
 {
-	"version": 1,
-	"settings": {
-		"color": {
-			"gradients": [],
-			"link": true,
-			"palette": [
-				{
-					"slug": "bg",
-					"color": "#FCF7F3",
-					"name": "BG"
-				},
-				{
-					"slug": "header",
-					"color": "#EFE7E1",
-					"name": "Header"
-				},
-				{
-					"slug": "card",
-					"color": "#fafafa",
-					"name": "Card"
-				},
-				{
-					"slug": "text",
-					"color": "#111",
-					"name": "Text"
-				},
-				{
-					"slug": "accent",
-					"color": "#577418",
-					"name": "Accent"
-				},
-				{
-					"slug": "dark-bg",
-					"color": "#40342E",
-					"name": "Dark BG"
-				},
-				{
-					"slug": "dark-header",
-					"color": "#614E44",
-					"name": "Dark Header"
-				},
-				{
-					"slug": "dark-card",
-					"color": "#221D1B",
-					"name": "Dark Card"
-				}
-				,
-				{
-					"slug": "dark-text",
-					"color": "#E4DFDC",
-					"name": "Dark Text"
-				}
-			]
-		},
-		"spacing": {
-			"customPadding": true
-		},
-		"typography": {
-			"customLineHeight": true,
-			"fontFamilies": [],
-			"fontSizes": []
-		},
-		"layout": {
-			"contentSize": "750px",
-			"wideSize": "1100px"
-		}
-	}
+  "version": 1,
+  "settings": {
+    "color": {
+      "gradients": [],
+      "link": true,
+      "palette": [
+        {
+          "slug": "bg",
+          "color": "#FCF7F3",
+          "name": "BG"
+        },
+        {
+          "slug": "header",
+          "color": "#EFE7E1",
+          "name": "Header"
+        },
+        {
+          "slug": "card",
+          "color": "#fff",
+          "name": "Card"
+        },
+        {
+          "slug": "text",
+          "color": "#222",
+          "name": "Text"
+        },
+        {
+          "slug": "accent",
+          "color": "#577418",
+          "name": "Accent"
+        },
+        {
+          "slug": "dark-bg",
+          "color": "#40342E",
+          "name": "Dark BG"
+        },
+        {
+          "slug": "dark-header",
+          "color": "#614E44",
+          "name": "Dark Header"
+        },
+        {
+          "slug": "dark-card",
+          "color": "#221D1B",
+          "name": "Dark Card"
+        },
+        {
+          "slug": "dark-text",
+          "color": "#E4DFDC",
+          "name": "Dark Text"
+        }
+      ]
+    },
+    "spacing": {
+      "customPadding": true
+    },
+    "typography": {
+      "customLineHeight": true,
+      "fontFamilies": [],
+      "fontSizes": []
+    },
+    "layout": {
+      "contentSize": "750px",
+      "wideSize": "1200px"
+    }
+  }
 }

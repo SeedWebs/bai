@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,AAAA,oBAAoB,AAAC,CACrB,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,GAAG,CACd,cAAc,CAAE,MAAM,CACtB,cAAc,CAAE,SAAS,CAC1B",
+    "sources": [
+        "../scss/singular.scss"
+    ],
+    "names": [],
+    "file": "singular.css"
+}

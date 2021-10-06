@@ -1,0 +1,73 @@
+.entry-image {
+  position: relative;
+  min-height: 200px;
+  .img {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 0;
+    background-color: var(--wp--preset--color--header);
+    overflow: hidden;
+  }
+  img {
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    max-height: 360px;
+    object-fit: cover;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  @media (min-width: 992px) {
+    img {
+      max-height: 400px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 60px;
+    img {
+      max-height: 500px;
+    }
+    .bg {
+      left: 0;
+      right: 0;
+      height: 50%;
+      position: absolute;
+      z-index: 1;
+      background-color: var(--wp--preset--color--header);
+    }
+  }
+}
+.wp-block-post-terms {
+  text-align: center;
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 10;
+  > a {
+    display: inline-block;
+    padding: 2px 10px;
+    background-color: var(--wp--preset--color--accent);
+    color: #fff;
+    margin: 0 1px;
+  }
+  &__separator {
+    display: none;
+  }
+}
+.wp-block-post-title {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.wp-block-post-date {
+  text-align: center;
+  font-size: 0.9em;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+main {
+  padding: 0 24px;
+}

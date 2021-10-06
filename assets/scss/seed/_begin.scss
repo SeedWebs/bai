@@ -18,11 +18,15 @@ body {
   min-height: 100vh;
   height: auto;
   text-rendering: optimizeLegibility;
+  font-size: var(--s-font-size);
 }
 img,
 video {
   max-width: 100%;
   height: auto;
+}
+iframe {
+  border: none;
 }
 svg {
   overflow: hidden;

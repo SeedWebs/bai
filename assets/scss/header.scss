@@ -4,6 +4,8 @@
   align-items: center;
   width: 100%;
   background-color: var(--wp--preset--color--header);
+  font-size: 26px;
+  min-height: 70px;
   a {
     color: var(--b-title);
     &:hover {
@@ -15,14 +17,16 @@
   }
   @media (min-width: 600px) {
     padding: 20px 30px;
+    min-height: 90px;
   }
   @media (min-width: 992px) {
-    padding: 30px 60px;
+    padding: 20px 60px;
   }
 }
 .site-title {
   margin: 0;
-  body.home & {
+  line-height: 1;
+  body.home:not(.paged) & {
     display: none;
   }
 }
@@ -33,12 +37,12 @@
     text-align: right;
     display: block;
     position: fixed;
-    top: 100px;
-    left: -104px;
+    top: 35px;
+    left: -139px;
     height: 80px;
     margin: 0;
     font-size: 12px;
-    z-index: 2;
+    z-index: 20;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     transform: rotate(-90deg) translateX(-50%);
@@ -47,12 +51,30 @@
 .site-logo {
   margin-right: 12px;
   color: var(--b-title);
-  img,
-  svg {
-    width: 36px;
-  }
+  display: inline-flex;
+  vertical-align: center;
   @media (min-width: 1200px) {
     margin-right: 16px;
+  }
+}
+.site-nav {
+  font-size: 18px;
+}
+.wp-block-navigation__responsive-container {
+  .wp-block-navigation:not(.has-background) &.is-menu-open {
+    background-color: var(--wp--preset--color--header);
+  }
+  &-open {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &-close {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -61,19 +83,33 @@
   background-color: var(--wp--preset--color--header);
   padding: 0 var(--s-space);
   text-align: center;
-  h2 {
+  body.home.paged & {
+    display: none;
+  }
+  h1 {
     font-size: 2.2em;
     line-height: 1.3;
     margin-bottom: 0;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
-  h3 {
+  h2 {
     margin: 10px 0;
     font-size: 1.2em;
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
   .wp-block-social-links {
     justify-content: center;
     gap: 0;
     margin-top: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     .wp-block-social-link {
       .wp-block-social-link-anchor {
         color: var(--wp--preset--color--text);
@@ -83,6 +119,10 @@
   .wp-block-image {
     margin-bottom: 0;
     line-height: 0;
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
   }
   @media (min-width: 600px) {
     text-align: left;
@@ -95,21 +135,36 @@
   }
   @media (min-width: 992px) {
     padding: 0 60px;
-    margin-top: -40px;
-    h2 {
+    h1 {
       font-size: 2.6em;
     }
-    h3 {
+    h2 {
       font-size: 1.6em;
     }
   }
   @media (min-width: 1100px) {
     padding: 0 calc(50% - 490px);
-
     .wp-block-column {
       &:first-of-type {
         padding-bottom: 60px;
       }
     }
   }
+  @media (min-width: 1200px) {
+    padding: 0 calc(50% - 510px);
+  }
+}
+
+// TITLE
+h1.wp-block-query-title,
+h1.wp-block-post-title {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h2.sec-title {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.06em;
 }
