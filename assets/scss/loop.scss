@@ -1,0 +1,52 @@
+.site-loop {
+  padding: 0 var(--s-space);
+  --wp--style--block-gap: 0px;
+  @media (min-width: 600px) {
+    li {
+      &:nth-child(2n) {
+        .pic {
+          order: 2;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding: 0 40px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 90px;
+  }
+
+  .wp-block-columns {
+    margin-bottom: 0;
+    align-items: stretch;
+  }
+
+  .wp-block-post-featured-image {
+    margin: 0;
+    padding-top: 75%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+  .info {
+    background-color: var(--wp--preset--color--card);
+    padding: var(--s-space);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .wp-block-post-excerpt__excerpt {
+    line-height: 3ex;
+    max-height: 12ex;
+    overflow: hidden;
+  }
+}

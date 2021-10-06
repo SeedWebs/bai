@@ -17,7 +17,7 @@
     padding: 20px 30px;
   }
   @media (min-width: 992px) {
-    padding: 30px 70px;
+    padding: 30px 60px;
   }
 }
 .site-title {
@@ -28,14 +28,35 @@
 }
 .site-tagline {
   display: none;
+  @media (min-width: 1200px) {
+    width: 400px;
+    text-align: right;
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: -104px;
+    height: 80px;
+    margin: 0;
+    font-size: 12px;
+    z-index: 2;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateX(-50%);
+  }
 }
 .site-logo {
   margin-right: 12px;
+  color: var(--b-title);
   img,
   svg {
     width: 36px;
   }
+  @media (min-width: 1200px) {
+    margin-right: 16px;
+  }
 }
+
+// INTRO
 .site-intro {
   background-color: var(--wp--preset--color--header);
   padding: 0 var(--s-space);
@@ -73,14 +94,22 @@
     }
   }
   @media (min-width: 992px) {
-    padding: 0 70px;
-    padding: 0 calc(50% - 490px);
+    padding: 0 60px;
     margin-top: -40px;
     h2 {
       font-size: 2.6em;
     }
     h3 {
       font-size: 1.6em;
+    }
+  }
+  @media (min-width: 1100px) {
+    padding: 0 calc(50% - 490px);
+
+    .wp-block-column {
+      &:first-of-type {
+        padding-bottom: 60px;
+      }
     }
   }
 }

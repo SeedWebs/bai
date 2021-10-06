@@ -25,12 +25,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  body:not(._light) {
+  body:not(.s-light) {
     @include dark-colors;
   }
 }
 
-body._dark {
+body.s-dark {
   @include dark-colors;
 }
 
