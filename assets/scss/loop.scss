@@ -86,3 +86,19 @@
     }
   }
 }
+.wp-block-query-pagination {
+  a {
+    color: var(--wp--preset--color--text);
+  }
+  .current {
+    min-width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    border-radius: 24px;
+    margin: 0 10px;
+    background-color: var(--wp--preset--color--card);
+  }
+}

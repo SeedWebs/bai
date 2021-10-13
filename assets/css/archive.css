@@ -1,2 +1,2 @@
-h1.wp-block-query-title{background-color:var(--wp--preset--color--header);margin-top:0;padding:0.5em 0 1em;margin-bottom:var(--s-space)}
+h1.wp-block-query-title{background-color:var(--wp--preset--color--header);margin-top:0;padding:0.5em var(--s-space);margin-bottom:var(--s-space)}.wp-block-term-description{margin-top:calc(-1 * var(--s-space));background-color:var(--wp--preset--color--header);padding:0 var(--s-space) 0.5em;margin-bottom:var(--s-space);text-align:center}
 /*# sourceMappingURL=archive.css.map */
