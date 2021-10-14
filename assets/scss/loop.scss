@@ -1,6 +1,7 @@
 .site-loop {
   padding: 0 var(--s-space);
   --wp--style--block-gap: 0px;
+  margin-bottom: var(--s-space);
   @media (min-width: 600px) {
     li {
       &:nth-child(2n) {
@@ -87,8 +88,17 @@
   }
 }
 .wp-block-query-pagination {
+  display: flex;
+  align-items: center;
   a {
     color: var(--wp--preset--color--text);
+    min-width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    border-radius: 24px;
   }
   .current {
     min-width: 40px;
@@ -100,5 +110,15 @@
     border-radius: 24px;
     margin: 0 10px;
     background-color: var(--wp--preset--color--card);
+  }
+}
+.wp-block-post-title {
+  a {
+    color: var(--wp--preset--color--text);
+    background: linear-gradient(var(--wp--preset--color--accent), var(--wp--preset--color--accent)) no-repeat left 90%/0% 2px;
+    padding-bottom: 0.3em;
+    &:hover {
+      background-size: 99% 2px;
+    }
   }
 }

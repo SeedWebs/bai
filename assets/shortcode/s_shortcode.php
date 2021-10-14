@@ -36,7 +36,7 @@ add_shortcode('s_main_category', 's_main_category');
 function s_featured_img() {
 	if(has_post_thumbnail()) {
 		$output  = '<div class="entry-image"><div class="bg"></div>';
-		$output .= '<div class="img">' . get_the_post_thumbnail( get_the_ID(), 'full' ) . '</div>'; 
+		$output .= '<div class="img">' . get_the_post_thumbnail( get_the_ID(), 'large' ) . '</div>'; 
 		$output .= '</div>';
 		return $output;
 	}

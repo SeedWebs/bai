@@ -43,6 +43,9 @@
   @media (min-width: 600px) {
     padding: 16px 60px;
   }
+  a {
+    color: var(--wp--preset--color--text);
+  }
   &.wp-block-columns {
     margin-bottom: 0;
   }

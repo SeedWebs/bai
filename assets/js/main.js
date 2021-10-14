@@ -19,7 +19,6 @@ window.addEventListener("scroll", scroll_fx, { passive: true });
 window.addEventListener("resize", scroll_fx, true);
 
 // DARK MODE
-
 let mode = localStorage.getItem("s-mode") || "";
 if (!mode) {
   if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -27,6 +26,10 @@ if (!mode) {
     document.getElementById("s-mode").classList.add("active");
   } else {
     mode = "light";
+  }
+} else {
+  if (mode == "dark") {
+    document.getElementById("s-mode").classList.add("active");
   }
 }
 document.body.classList.add("s-" + mode);

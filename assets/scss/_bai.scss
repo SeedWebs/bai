@@ -70,3 +70,13 @@ h3 {
     opacity: 1;
   }
 }
+
+// ROOT
+.wp-site-blocks {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  > footer {
+    margin-top: auto;
+  }
+}

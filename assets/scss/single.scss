@@ -40,12 +40,12 @@
 }
 .wp-block-post-terms {
   text-align: center;
-  transform: translateY(-50%);
   position: relative;
   z-index: 10;
   > a {
     display: inline-block;
-    padding: 2px 10px;
+    padding: 1px 10px;
+    background: none;
     background-color: var(--wp--preset--color--accent);
     color: #fff;
     margin: 0 1px;
@@ -53,6 +53,9 @@
   &__separator {
     display: none;
   }
+}
+.taxonomy-category {
+  transform: translateY(-50%);
 }
 .wp-block-post-title {
   animation-name: fadeInUp;
@@ -66,7 +69,23 @@
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
-
+.entry-content {
+  line-height: 1.8;
+}
+.commentmetadata {
+  a {
+    background: none;
+  }
+}
 main {
   padding: 0 24px;
+  .taxonomy-post_tag {
+    font-size: 0.9em;
+    > a {
+      background-color: var(--wp--preset--color--card);
+      color: var(--wp--preset--color--text);
+      border: 1px solid var(--wp--preset--color--text);
+      margin: 0 6px;
+    }
+  }
 }
