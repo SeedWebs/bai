@@ -1,0 +1,59 @@
+// REF - https://tailwindcss.com/
+
+// ALIGN
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+@mixin s_align {
+  &text-left {
+    text-align: left;
+  }
+  &text-center {
+    text-align: center;
+  }
+  &text-right {
+    text-align: right;
+  }
+}
+
+// JUSTIFY
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+@mixin s_justify {
+  &justify-start {
+    justify-content: flex-start;
+  }
+  &justify-end {
+    justify-content: flex-end;
+  }
+  &justify-center {
+    justify-content: center;
+  }
+}
+
+$sm: 600px; // (Change to fit Blocks)
+
+@media (min-width: $sm) {
+  .sm\: {
+    @include s_align;
+  }
+}
+
+@media (min-width: $sm) {
+  .sm\: {
+    @include s_justify;
+  }
+}
