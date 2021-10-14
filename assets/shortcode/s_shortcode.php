@@ -40,6 +40,5 @@ function s_featured_img() {
 		$output .= '</div>';
 		return $output;
 	}
-	return '123';
 }
 add_shortcode('s_featured_img', 's_featured_img'); 

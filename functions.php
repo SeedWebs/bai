@@ -38,6 +38,12 @@ function bai_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bai_scripts' );
 
+function bai_footer_styles() {
+	$ver = wp_get_theme()->get( 'Version' );
+    wp_enqueue_style( 'b-footer', get_template_directory_uri() . '/assets/css/footer.css' , array() , $ver );
+};
+add_action( 'wp_footer', 'bai_footer_styles' );
+
 /**
  * Remove "Category: ", "Tag: ", "Taxonomy: " from archive title
  */
