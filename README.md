@@ -1,3 +1,5 @@
 # BAI WORDPRESS THEME
 
-Full Site Editing WordPress Theme for Personal Blog, by Seed Webs.
+Block-Based WordPress Theme with Dark Mode, by Seed Webs.
+
+Please see demo site at [Bai.SeedDemo.com](https://bai.seeddemo.com/).
