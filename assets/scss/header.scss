@@ -6,6 +6,7 @@
   background-color: var(--wp--preset--color--header);
   font-size: 26px;
   min-height: 70px;
+  .wp-block-navigation.wp-block-navigation a,
   a {
     color: var(--b-title);
     &:hover {
@@ -60,20 +61,36 @@
 .site-nav {
   font-size: 18px;
 }
-.wp-block-navigation__responsive-container {
-  .wp-block-navigation:not(.has-background) &.is-menu-open {
-    background-color: var(--wp--preset--color--header);
-  }
-  &-open {
-    svg {
-      width: 32px;
-      height: 32px;
+@media (max-width: 599px) {
+  .wp-block-navigation__responsive-container {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -2;
+    transition: 0.4s;
+    padding: 0 24px;
+    .wp-block-navigation:not(.has-background) &.is-menu-open {
+      background-color: var(--wp--preset--color--header);
+      color: var(--b-title);
     }
-  }
-  &-close {
-    svg {
-      width: 32px;
-      height: 32px;
+    &.is-menu-open {
+      opacity: 1;
+    }
+    &-open {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &-close {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .wp-block-navigation__container {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
