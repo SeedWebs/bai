@@ -63,4 +63,12 @@ function seed_get_the_archive_title($title) {
     return $title;
 }
 
-require get_template_directory() . '/assets/shortcode/s_shortcode.php';
+
+// TIME AGO
+function s_time_ago($date) {
+	if (!is_single()) {
+		return  sprintf( esc_html__( '%s ago', 'bai' ), human_time_diff(get_the_time( 'U' ), current_time( 'timestamp' ) ) );
+	}
+	return $date;
+}
+add_filter( 'get_the_date', 's_time_ago' );
