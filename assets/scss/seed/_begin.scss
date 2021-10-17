@@ -42,6 +42,11 @@ textarea {
   resize: vertical;
   max-width: 100%;
 }
+input,
+textarea {
+  font-size: 16px;
+  padding: 0.4em;
+}
 h1,
 h2,
 h3,

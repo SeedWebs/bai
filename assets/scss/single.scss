@@ -82,9 +82,9 @@
   }
 }
 main {
-  padding: 0 24px;
   .taxonomy-post_tag {
     font-size: 0.9em;
+    margin: var(--s-space) 0;
     > a {
       background-color: var(--wp--preset--color--card);
       color: var(--wp--preset--color--text);
@@ -92,4 +92,18 @@ main {
       margin: 0 6px;
     }
   }
+}
+
+// COMMENT
+.comment-respond {
+  padding: var(--s-space);
+  margin-top: var(--s-space);
+  background-color: var(--wp--preset--color--card);
+  clear: both;
+  .form-submit {
+    margin-bottom: 0;
+  }
+}
+.comment-reply-title {
+  margin-top: 0;
 }
