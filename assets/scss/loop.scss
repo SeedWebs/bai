@@ -51,12 +51,22 @@
       margin: 6px 0;
     }
   }
+  .entty-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .cat {
-    display: inline-block;
-    padding: 2px 10px;
-    background-color: var(--wp--preset--color--accent);
-    color: #fff;
-    margin-right: 12px;
+    > a {
+      display: inline-block;
+      padding: 2px 10px;
+      background: var(--wp--preset--color--accent);
+      color: #fff;
+      margin-right: 12px;
+    }
+    .wp-block-post-terms__separator {
+      display: none;
+    }
   }
   .wp-block-post-title {
     font-size: 1.8em;

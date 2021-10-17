@@ -1,7 +1,7 @@
 .entry-image {
   position: relative;
   min-height: 200px;
-  .img {
+  .wp-block-post-featured-image {
     max-width: 1200px;
     margin: 0 auto;
     line-height: 0;
@@ -25,10 +25,10 @@
   }
   @media (min-width: 1200px) {
     padding: 0 60px;
-    img {
-      max-height: 500px;
-    }
-    .bg {
+    &:after {
+      content: "";
+      display: block;
+      top: 0;
       left: 0;
       right: 0;
       height: 50%;
@@ -36,8 +36,12 @@
       z-index: 1;
       background-color: var(--wp--preset--color--header);
     }
+    img {
+      max-height: 500px;
+    }
   }
 }
+
 .wp-block-post-terms {
   text-align: center;
   position: relative;
