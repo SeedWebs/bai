@@ -3,7 +3,7 @@ Contributors: seedwebs
 Requires at least: 5.8
 Tested up to: 5.8
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,8 +20,12 @@ No data is saved in the database or transferred.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
 * Submit: October 19, 2021
+
+= 1.0.0 =
+* Submit: October 17, 2021
+* https://themes.trac.wordpress.org/ticket/107012
 
 == Copyright ==
 
