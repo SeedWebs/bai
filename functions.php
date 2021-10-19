@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Setup theme support.
+ */
 if ( ! function_exists( 'bai_support' ) ) :
 	function bai_support()  {
 		add_theme_support( 'post-thumbnails' );
@@ -19,36 +21,36 @@ endif;
 function bai_scripts() {
 	$ver = wp_get_theme()->get( 'Version' );
 	$url =  get_template_directory_uri() . '/assets/css/';
-	wp_enqueue_style( 'b-seed', $url . 'seed.css', array(), $ver );
-	wp_enqueue_style( 'b-header', $url . 'header.css', array(), $ver );
+	wp_enqueue_style( 'bai-seed', $url . 'seed.css', array(), $ver );
+	wp_enqueue_style( 'bai-header', $url . 'header.css', array(), $ver );
 	if (is_front_page() || is_archive()) {
-		wp_enqueue_style( 'b-loop', $url . 'loop.css', array(), $ver );
+		wp_enqueue_style( 'bai-loop', $url . 'loop.css', array(), $ver );
 	}
 	if (is_archive()) {
-		wp_enqueue_style( 'b-archive', $url . 'archive.css', array(), $ver );
+		wp_enqueue_style( 'bai-archive', $url . 'archive.css', array(), $ver );
 	}
 	if (is_single()) {
-		wp_enqueue_style( 'b-single', $url . 'single.css', array(), $ver );
+		wp_enqueue_style( 'bai-single', $url . 'single.css', array(), $ver );
 	}
 	if (is_page()) {
-		wp_enqueue_style( 'b-page', $url . 'page.css', array(), $ver );
+		wp_enqueue_style( 'bai-page', $url . 'page.css', array(), $ver );
 	}
 	
-	wp_enqueue_script('b-main', get_template_directory_uri() . '/assets/js/main.js', array(), $ver, true);
+	wp_enqueue_script('bai', get_template_directory_uri() . '/assets/js/bai.js', array(), $ver, true);
 }
 add_action( 'wp_enqueue_scripts', 'bai_scripts' );
 
 function bai_footer_styles() {
 	$ver = wp_get_theme()->get( 'Version' );
-    wp_enqueue_style( 'b-footer', get_template_directory_uri() . '/assets/css/footer.css' , array() , $ver );
+    wp_enqueue_style( 'bai-footer', get_template_directory_uri() . '/assets/css/footer.css' , array() , $ver );
 };
 add_action( 'wp_footer', 'bai_footer_styles' );
 
 /**
  * Remove "Category: ", "Tag: ", "Taxonomy: " from archive title
  */
-add_filter('get_the_archive_title', 'seed_get_the_archive_title');
-function seed_get_the_archive_title($title) {
+add_filter('get_the_archive_title', 'bai_get_the_archive_title');
+function bai_get_the_archive_title($title) {
     if (is_category()) {
         $title = single_cat_title('', false);
     } elseif (is_tag()) {
@@ -63,12 +65,13 @@ function seed_get_the_archive_title($title) {
     return $title;
 }
 
-
-// TIME AGO
-function s_time_ago($date) {
+/**
+ * Time Ago.
+ */
+function bai_time_ago($date) {
 	if (!is_single()) {
 		return  sprintf( esc_html__( '%s ago', 'bai' ), human_time_diff(get_the_time( 'U' ), current_time( 'timestamp' ) ) );
 	}
 	return $date;
 }
-add_filter( 'get_the_date', 's_time_ago' );
+add_filter( 'get_the_date', 'bai_time_ago' );
