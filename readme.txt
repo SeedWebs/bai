@@ -21,7 +21,7 @@ No data is saved in the database or transferred.
 == Changelog ==
 
 = 1.0 =
-* Submit: October 17, 2021
+* Submit: October 19, 2021
 
 == Copyright ==
 
@@ -40,6 +40,5 @@ GNU General Public License for more details.
 
 Bai demo site is on [Bai.SeedDemo.com](https://bai.seeddemo.com/).
 
-Bai uses the following third-party resources:
-* [Woman Photo by Eneida Nieves](https://stocksnap.io/photo/female-model-KQECHSBAOC)
-* [Dark Mode Style from Ryan](https://codepen.io/ryanparag/pen/LoKyaR).
+== Credits ==
+* [Woman Photo by Eneida Nieves](https://stocksnap.io/photo/female-model-KQECHSBAOC).
