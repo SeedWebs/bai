@@ -41,6 +41,5 @@ GNU General Public License for more details.
 Bai demo site is on [Bai.SeedDemo.com](https://bai.seeddemo.com/).
 
 Bai uses the following third-party resources:
-* [Leaf Logo by Warunk Icon](https://thenounproject.com/term/leaf/3501175/)
-* [Woman Photo by Icons8 Team](https://unsplash.com/photos/URoyGsQdLwg)
+* [Woman Photo by Eneida Nieves](https://stocksnap.io/photo/female-model-KQECHSBAOC)
 * [Dark Mode Style from Ryan](https://codepen.io/ryanparag/pen/LoKyaR).
