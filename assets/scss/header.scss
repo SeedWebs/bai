@@ -9,7 +9,8 @@
   .wp-block-navigation.wp-block-navigation a,
   a {
     color: var(--b-title);
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--wp--preset--color--accent);
     }
   }
