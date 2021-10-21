@@ -68,6 +68,9 @@ legend {
   font-family: var(--s-heading);
   font-weight: var(--s-heading-weight);
 }
+:not(a, textarea, input):focus {
+  outline: none;
+}
 a {
   text-decoration: none;
   transition: 0.3s;
