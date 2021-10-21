@@ -28,6 +28,9 @@
 .site-title {
   margin: 0;
   line-height: 1;
+  font-family: var(--s-heading);
+  font-weight: var(--s-heading-weight);
+  letter-spacing: 0.06em;
   body.home:not(.paged) & {
     display: none;
   }
@@ -61,6 +64,7 @@
 }
 .site-nav {
   font-size: 18px;
+  letter-spacing: 0.06em;
 }
 @media (max-width: 599px) {
   .wp-block-navigation__responsive-container {
