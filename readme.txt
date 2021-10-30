@@ -20,6 +20,12 @@ No data is saved in the database or transferred.
 
 == Changelog ==
 
+= 1.0.2 =
+* Submit: October 30, 2021
+* Tweak: me.png to be smaller.
+* Fix: CSS in Single Template.
+
+
 = 1.0.1 =
 * Submit: October 19, 2021
 
