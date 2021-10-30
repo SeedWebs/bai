@@ -126,8 +126,6 @@
   }
   .wp-block-social-links {
     justify-content: center;
-    gap: 0;
-    margin-top: 0;
     animation-name: fadeInUp;
     animation-delay: 1s;
     animation-duration: 1s;
@@ -151,7 +149,6 @@
     padding: 0 30px;
     margin-top: -30px;
     .wp-block-social-links {
-      margin-left: -12px;
       justify-content: unset;
     }
   }
