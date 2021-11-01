@@ -1,3 +1,6 @@
+.wp-block-query {
+  padding: 0;
+}
 .site-loop {
   padding: 0 var(--s-space);
   --wp--style--block-gap: 0px;
@@ -128,11 +131,7 @@
 .wp-block-post-title {
   a {
     color: var(--wp--preset--color--text);
-    background: linear-gradient(
-        var(--wp--preset--color--accent),
-        var(--wp--preset--color--accent)
-      )
-      no-repeat left 90%/0% 2px;
+    background: linear-gradient(var(--wp--preset--color--accent), var(--wp--preset--color--accent)) no-repeat left 90%/0% 2px;
     padding-bottom: 0.3em;
     &:hover {
       background-size: 99% 2px;
