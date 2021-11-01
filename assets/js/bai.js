@@ -9,8 +9,6 @@ function scroll_fx() {
   elms.forEach(function (elm) {
     if (isInViewport(elm)) {
       elm.classList.add("-show");
-    } else {
-      elm.classList.remove("-show");
     }
   });
 }
