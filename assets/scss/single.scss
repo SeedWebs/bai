@@ -53,6 +53,8 @@
     background-color: var(--wp--preset--color--accent);
     color: #fff;
     margin: 0 1px;
+    font-family: var(--s-heading);
+    font-weight: var(--s-heading-weight);
   }
   &__separator {
     display: none;

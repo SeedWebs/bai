@@ -80,3 +80,17 @@ h3 {
     margin-top: auto;
   }
 }
+
+// SCROLL FX
+.site-loop .wp-block-columns,
+.entry-image > img,
+.entry-content > *,
+.s-fx {
+  transform: translateY(90px);
+  opacity: 0;
+  transition: 1s;
+  &.-show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
