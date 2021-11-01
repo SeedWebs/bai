@@ -20,6 +20,11 @@ No data is saved in the database or transferred.
 
 == Changelog ==
 
+= 1.0.4 =
+* Submit: November 1, 2021
+* Tweak: Reduce Animation.
+* Fix: Mobile CSS.
+
 = 1.0.3 =
 * Submit: November 1, 2021
 * Tweak: Increase font size and spacing for large viewport.
