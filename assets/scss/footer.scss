@@ -1,3 +1,12 @@
+.wp-block-image figcaption {
+  color: var(--wp--preset--color--text);
+  opacity: 0.8;
+}
+.wp-block-post-comments {
+  margin-top: var(--s-space);
+  border-top: 2px solid;
+}
+
 .s-mode {
   width: 40px;
   height: 40px;

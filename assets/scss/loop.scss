@@ -72,6 +72,7 @@
   }
   .wp-block-post-title {
     font-size: 1.8em;
+    margin-bottom: 0.4em;
   }
   .wp-block-post-excerpt__excerpt {
     line-height: 3ex;
@@ -127,7 +128,11 @@
 .wp-block-post-title {
   a {
     color: var(--wp--preset--color--text);
-    background: linear-gradient(var(--wp--preset--color--accent), var(--wp--preset--color--accent)) no-repeat left 90%/0% 2px;
+    background: linear-gradient(
+        var(--wp--preset--color--accent),
+        var(--wp--preset--color--accent)
+      )
+      no-repeat left 90%/0% 2px;
     padding-bottom: 0.3em;
     &:hover {
       background-size: 99% 2px;

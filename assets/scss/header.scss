@@ -32,7 +32,7 @@
   font-weight: var(--s-heading-weight);
   letter-spacing: 0.06em;
   body.home:not(.paged) & {
-    visibility: hidden;
+    display: none;
   }
 }
 .site-tagline {
@@ -56,6 +56,7 @@
 .site-logo {
   margin-right: 12px;
   color: var(--b-title);
+  display: flex;
   @media (min-width: 1200px) {
     margin-right: 16px;
   }
@@ -145,7 +146,7 @@
   @media (min-width: 600px) {
     text-align: left;
     padding: 0 30px;
-    margin-top: -30px;
+    margin-top: -20px;
     .wp-block-social-links {
       justify-content: unset;
     }
@@ -185,12 +186,25 @@ h2.sec-title {
 }
 
 // MAIN
-
-main a {
-  color: var(--wp--preset--color--text);
-  background: linear-gradient(var(--wp--preset--color--text), var(--wp--preset--color--text)) no-repeat left 90%/90% 1px;
-  padding-bottom: 0.3em;
-  &:hover {
-    background-size: 99% 1px;
+main {
+  padding: 0 24px;
+  @media (min-width: 600px) {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+  a {
+    color: var(--wp--preset--color--text);
+    background: linear-gradient(
+        var(--wp--preset--color--text),
+        var(--wp--preset--color--text)
+      )
+      no-repeat left 90%/90% 1px;
+    padding-bottom: 0.3em;
+    &:hover {
+      background-size: 99% 1px;
+    }
   }
 }
