@@ -197,12 +197,7 @@ main {
   }
   a {
     color: var(--wp--preset--color--text);
-    background: linear-gradient(
-        var(--wp--preset--color--text),
-        var(--wp--preset--color--text)
-      )
-      no-repeat left 90%/90% 1px;
-    padding-bottom: 0.3em;
+    background: linear-gradient(var(--wp--preset--color--text), var(--wp--preset--color--text)) no-repeat left 90%/90% 1px;
     &:hover {
       background-size: 99% 1px;
     }

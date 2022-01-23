@@ -18,9 +18,14 @@
     animation-duration: 1s;
     animation-fill-mode: both;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     img {
       max-height: 400px;
+    }
+  }
+  @media (min-width: 992px) {
+    img {
+      max-height: 500px;
     }
   }
   @media (min-width: 1200px) {
@@ -37,7 +42,7 @@
       background-color: var(--wp--preset--color--header);
     }
     img {
-      max-height: 500px;
+      max-height: 600px;
     }
   }
 }
@@ -109,4 +114,8 @@ main {
 }
 .comment-reply-title {
   margin-top: 0;
+}
+.comment-metadata {
+  font-size: 0.8em;
+  margin: 0.8em 0;
 }
