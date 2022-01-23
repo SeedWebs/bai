@@ -5,7 +5,7 @@
 if ( ! function_exists( 'bai_support' ) ) :
 	function bai_support()  {
 		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 600, 450);
+		set_post_thumbnail_size( 2400, 2400);
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'editor-styles' );
